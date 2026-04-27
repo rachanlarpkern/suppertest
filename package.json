@@ -1,0 +1,11 @@
+{
+  "name": "my-railway-website",
+  "version": "1.0.0",
+  "description": "My Static Website on Railway",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
