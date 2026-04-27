@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์ของฉัน | My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* รีเซ็ตค่าเริ่มต้น */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* ส่วนแถบนำทาง (Navbar) */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #4a90e2;
+        }
+
+        /* ส่วนหัวเรื่อง (Hero Section) */
+        .hero {
+            background: linear-gradient(135deg, #4a90e2 0%, #50e3c2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: white;
+            color: #4a90e2;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* ส่วนเนื้อหา (Features) */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* ส่วนท้าย (Footer) */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* สำหรับหน้าจอมือถือ */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">MyWeb.</a>
+        <ul class="nav-links">
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">บริการของเรา</a></li>
+            <li><a href="#">ผลงาน</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+        <p>นี่คือตัวอย่างการออกแบบหน้าเว็บเพจที่เรียบง่าย แต่ดูทันสมัยและเป็นมืออาชีพ รองรับการแสดงผลทุกหน้าจอ</p>
+        <a href="#" class="btn">เริ่มต้นใช้งาน</a>
+    </header>
+
+    <section class="features">
+        <div class="card">
+            <div class="card-icon">🚀</div>
+            <h3>ทำงานรวดเร็ว</h3>
+            <p>เว็บไซต์ถูกปรับแต่งให้โหลดไว โค้ดสะอาดและอ่านง่าย เพื่อประสบการณ์ที่ดีของผู้ใช้งาน</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">📱</div>
+            <h3>รองรับมือถือ</h3>
+            <p>ดีไซน์แบบ Responsive ปรับขนาดตามหน้าจอโดยอัตโนมัติ ไม่ว่าจะดูผ่านคอมพิวเตอร์หรือโทรศัพท์</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>ดีไซน์สวยงาม</h3>
+            <p>ใช้สีสันที่สบายตา มีลูกเล่นอนิเมชันตอนเอาเมาส์ชี้ เพื่อให้เว็บดูมีชีวิตชีวามากขึ้น</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyWeb. สงวนลิขสิทธิ์</p>
+    </footer>
+
+</body>
+</html>
